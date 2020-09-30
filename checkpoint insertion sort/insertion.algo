@@ -1,0 +1,19 @@
+ALGORITHM ins_sort
+VAR
+    i,j,n: INTEGER;
+    arr: ARRAY_OF INTEGER;
+    temp: INTEGER;
+    
+BEGIN
+    FOR i FROM 1 TO n-1 STEP step  DO
+         temp:= arr[i];
+         j:= i-1;
+    
+    WHILE (j>=0 && arr[j]>temp) DO
+        arr[j+1] = a[j];
+        j--;
+    END_WHILE 
+    arr[j+1] = temp
+
+    END_FOR
+END
